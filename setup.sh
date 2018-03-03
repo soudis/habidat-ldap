@@ -1,7 +1,7 @@
 #!/bin/bash
 
 display_usage() { 
-	echo "This script must take username and password
+	echo "This script must take username and password"
 	echo -e "\nUsage: setup.sh username password \n" 
 	} 
   
