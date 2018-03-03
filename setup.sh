@@ -12,5 +12,7 @@ then
   exit 1
 fi 
 
+RUN envsubst < /setup/setup_nodes.ldif > /setup/setup_nodes.ldif
+
 ldapadd -x -D $1 -w $2 -f /setup/setup_nodes.ldif
 
