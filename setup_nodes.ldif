@@ -1,10 +1,10 @@
-dn: ou=groups,dc=habidat-staging
+dn: ou=groups,dc=$LDAP_DOMAIN
 ou: groups
 objectClass: top
 objectClass: organizationalUnit
 description: User groups
 
-dn: ou=users,dc=habidat-staging
+dn: ou=users,dc=$LDAP_DOMAIN
 ou: users
 objectClass: top
 objectClass: organizationalUnit
