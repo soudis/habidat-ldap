@@ -1,0 +1,12 @@
+dn: ou=groups,dc=habidat-staging
+ou: groups
+objectClass: top
+objectClass: organizationalUnit
+description: User groups
+
+dn: ou=users,dc=habidat-staging
+ou: users
+objectClass: top
+objectClass: organizationalUnit
+description: habi*DAT Users
+
