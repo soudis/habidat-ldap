@@ -10,7 +10,7 @@ objectClass: top
 objectClass: organizationalUnit
 description: habi*DAT Users
 
-dn: cn=admin,dc=$LDAP_DOMAIN
+dn: cn=admin,ou=users,dc=$LDAP_DOMAIN
 businesscategory: admin
 cn: admin
 gidnumber: 502
@@ -25,8 +25,8 @@ uid: admin
 uidnumber: 1010
 userpassword: yuEjMtqCWXyb6kdj
 
-dn: cn=admin,dc=$LDAP_DOMAIN
+dn: cn=admin,ou=groups,dc=$LDAP_DOMAIN
 cn: admin
-member: cn=admin,dc=$LDAP_DOMAIN
+member: cn=admin,ou=users,dc=$LDAP_DOMAIN
 objectclass: groupOfNames
 objectclass: top
