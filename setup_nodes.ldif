@@ -10,3 +10,23 @@ objectClass: top
 objectClass: organizationalUnit
 description: habi*DAT Users
 
+dn: cn=admin,dc=$LDAP_DOMAIN
+businesscategory: admin
+cn: admin
+gidnumber: 502
+givenname: admin
+homedirectory: /home/users/admin
+mail: florian.humer@gmail.com
+objectclass: inetOrgPerson
+objectclass: posixAccount
+objectclass: top
+sn: admin
+uid: admin
+uidnumber: 1010
+userpassword: yuEjMtqCWXyb6kdj
+
+dn: cn=admin,dc=$LDAP_DOMAIN
+cn: admin
+member: cn=admin,dc=$LDAP_DOMAIN
+objectclass: groupOfNames
+objectclass: top
