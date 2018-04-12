@@ -21,6 +21,8 @@ objectclass: posixAccount
 objectclass: top
 sn: admin
 uid: admin
+uidnumber: 1010
+gidnumber: 502
 userpassword: $LDAP_ADMIN_PASSWORD
 
 dn: cn=admin,ou=groups,$LDAP_BASE
