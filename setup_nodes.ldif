@@ -1,32 +1,30 @@
-dn: ou=groups,dc=$LDAP_DOMAIN
+dn: ou=groups,$LDAP_BASE
 ou: groups
 objectClass: top
 objectClass: organizationalUnit
 description: User groups
 
-dn: ou=users,dc=$LDAP_DOMAIN
+dn: ou=users,$LDAP_BASE
 ou: users
 objectClass: top
 objectClass: organizationalUnit
 description: habi*DAT Users
 
-dn: cn=admin,ou=users,dc=$LDAP_DOMAIN
+dn: cn=admin,ou=users,$LDAP_BASE
 businesscategory: admin
 cn: admin
-gidnumber: 502
 givenname: admin
 homedirectory: /home/users/admin
-mail: florian.humer@gmail.com
+mail: $LDAP_ADMIN_EMAIL
 objectclass: inetOrgPerson
 objectclass: posixAccount
 objectclass: top
 sn: admin
 uid: admin
-uidnumber: 1010
-userpassword: yuEjMtqCWXyb6kdj
+userpassword: $LDAP_ADMIN_PASSWORD
 
-dn: cn=admin,ou=groups,dc=$LDAP_DOMAIN
+dn: cn=admin,ou=groups,$LDAP_BASE
 cn: admin
-member: cn=admin,ou=users,dc=$LDAP_DOMAIN
+member: cn=admin,ou=users,$LDAP_BASE
 objectclass: groupOfNames
 objectclass: top
