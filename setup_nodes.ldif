@@ -25,8 +25,8 @@ uidnumber: 1010
 gidnumber: 502
 userpassword: $LDAP_ADMIN_PASSWORD
 
-dn: cn=admin,ou=groups,$LDAP_BASE
-cn: admin
+dn: cn=admins,ou=groups,$LDAP_BASE
+cn: admins
 member: cn=admin,ou=users,$LDAP_BASE
 objectclass: groupOfNames
 objectclass: top
