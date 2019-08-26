@@ -1,4 +1,4 @@
-FROM osixia/openldap:1.2.0
+FROM osixia/openldap:1.2.5
 
 RUN \
   apt-get update \
